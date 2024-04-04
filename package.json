@@ -1,0 +1,22 @@
+{
+	"name": "sync",
+	"version": "0.0.1",
+	"description": "sync",
+	"type": "module",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server",
+		"synchronize": "node ./synchron.js",
+		"ffstart": "fastify start server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@fastify/error": "^3.4.1",
+		"@fastify/mysql": "^4.2.0",
+		"fastify": "^4.26.0",
+		"mysql2": "^3.9.3",
+		"node-schedule": "^2.1.1"
+	}
+}
