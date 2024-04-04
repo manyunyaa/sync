@@ -21,8 +21,6 @@ const fastify = Fastify({ logger: { file: FASTIFY_LOG_PATH } });
 const connectionString = DEFAULT_CONNECTION_STRING;
 
 
-// Подключаемся  к БД
-// Опция promise: true нужна, чтобы обращатьс к БД асинхронно, с async/await
 fastify.register(fastifyMySQL, { connectionString, promise: true, })
 	.after((err, done) => {
 		if (err) {
